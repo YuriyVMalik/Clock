@@ -1,0 +1,51 @@
+.button {
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #ffffff;
+    display: inline-block;
+    //max-width: 206px;
+    //max-height: 52px;
+    ///Падінгами зробили висоту
+    padding: 16px 40px;
+    position: relative;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: opacity 0.3s ease 0s;
+        opacity: 0;
+        background: linear-gradient(55.95deg, #ca3530 0%, #c94b05 100%);
+        border-radius: 4px;
+    }
+}
+
+.button:hover::before {
+    opacity: 1;
+} 
+
+.button span{
+    position: relative;
+    z-index: 2;
+}
+
+.button--border {
+    background: transparent;
+    position: relative;
+    border: 1px solid #ff3f3a;
+    color: #ff3f3a;
+    padding: 15px 40px;
+    transition: all 0.3s ease 0s;
+    &:hover{
+        color: #ffffff;
+        background-color: #ff3f3a;
+    }
+}
+
+
