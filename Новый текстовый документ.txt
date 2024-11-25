@@ -1,0 +1,75 @@
+<div class="hours__numbers number">
+                            <div class="number__left">
+                                <div class="number__left__top"></div>
+                                    <div class="number__left__top__left number__segment--active"></div>
+                                    <div class="number__left__top__top number__segment--active"></div>
+                                    <div class="number__left__top__right number__segment--active"></div>
+                                    <div class="number__left__top__bottom number__segment--active"></div>
+                                </div>
+                                <div class="number__left__bottom">
+                                    <div class="number__left__bottom__left number__segment--active"></div>
+                                    <div class="number__left__bottom__top number__segment--active"></div>
+                                    <div class="number__left__bottom__right number__segment--active"></div>
+                                    <div class="number__left__bottom__bottom number__segment--active"></div>
+                                </div>
+                            </div>
+                            <div class="number__right">
+                                <div class="number__right__top"></div>
+                                    <div class="number__right__top__left number__segment--active"></div>
+                                    <div class="number__right__top__top number__segment--active"></div>
+                                    <div class="number__right__top__right number__segment--active"></div>
+                                    <div class="number__right__top__bottom number__segment--active"></div>
+                                </div>
+                                <div class="number__right__bottom"></div>
+                                    <div class="number__right__bottom__left number__segment--active"></div>
+                                    <div class="number__right__bottom__top number__segment--active"></div>
+                                    <div class="number__right__bottom__right number__segment--active"></div>
+                                    <div class="number__right__bottom__bottom number__segment--active"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        .digit__block--top {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    .digit__segment--left {
+        position: absolute;
+        max-width: 20px;
+        min-height: 190px;
+        border-radius: 10px;
+        background-color: red;
+    }
+}
+
+.clock__container {
+    padding-top: 100px;
+
+    .hours {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+
+        .hours__digit--first {
+            border: 1px solid white;
+        }
+        .hours__digit--second {
+            border: 1px solid red;
+            .digit__block--top {
+                width: 200px;
+                height: 200px;
+                position: relative;
+                .digit__segment--active {
+                    background-color: red;
+                }
+                .digit__segment--left {
+                    position: absolute;
+                    max-width: 20px;
+                    min-height: 190px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
